@@ -1,97 +1,29 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
+﻿:root {
+    color-scheme: light;
     font-family: Arial, sans-serif;
-    padding: 10px;
-    background-color: #ce4646;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+    background: #211814;
+    color: #fff8ef;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #890808;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-header .img {
-    width: 50px;
-    height: auto;
-}
-
-.contenedor {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 10px;
-    flex: 1;
-}
-
-.menu {
-    flex: 1;
-    background: #df7878;
-    padding: 15px;
-    border: 1px solid #820707;
-    border-radius: 5px;
-    height: fit-content;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.galeria {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.tarjeta-disfraz {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    background: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.tarjeta-disfraz img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.Metococrearotrohptali{
-    color: #710606;
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-.info-disfraz h2 {
-    margin: 0 0 8px 0;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-footer {
-    background-color: #890808;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 3px;
-}
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; padding: 18px; display: flex; flex-direction: column; background: radial-gradient(circle at top right, #65331f, #211814 55%); }
+header { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 24px 30px; border: 1px solid #a8542f; border-radius: 14px; background: #3c211a; box-shadow: 0 10px 30px #100a0780; }
+.etiqueta, .categoria { margin: 0 0 8px; color: #f0a26e; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); }
+.bajada { margin: 8px 0 0; color: #e4c9b7; }
+.logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; }
+.contenedor { flex: 1; display: flex; align-items: flex-start; gap: 20px; margin: 20px 0; }
+.menu { flex: 1; min-width: 190px; padding: 20px; border: 1px solid #75432e; border-radius: 14px; background: #35211a; }
+.menu h2 { margin: 0 0 14px; font-size: 1rem; }
+.menu ul { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.menu a { display: block; padding: 10px 12px; border-radius: 8px; color: #f7dfce; text-decoration: none; }
+.menu a:hover, .menu a.activo { background: #864324; color: white; }
+.galeria { flex: 3; display: grid; gap: 14px; }
+.tarjeta-disfraz { display: flex; align-items: center; gap: 20px; padding: 16px; border: 1px solid #56372a; border-radius: 14px; background: #fff9f2; color: #29201c; box-shadow: 0 7px 22px #100a0740; }
+.tarjeta-disfraz img { flex: 0 0 140px; width: 140px; height: 140px; object-fit: cover; border-radius: 10px; }
+.info-disfraz h2 { margin: 0 0 8px; font-size: 1.3rem; }
+.info-disfraz p:last-child { margin: 0; line-height: 1.55; color: #51443d; }
+footer { padding: 10px; border-radius: 10px; background: #3c211a; color: #e4c9b7; text-align: center; }
+footer p { margin: 0; }
+@media (max-width: 650px) { body { padding: 12px; } header { padding: 20px; } .contenedor { flex-direction: column; } .menu, .galeria { width: 100%; } .menu ul { grid-template-columns: repeat(3, 1fr); } .tarjeta-disfraz { align-items: flex-start; gap: 14px; } .tarjeta-disfraz img { flex-basis: 100px; width: 100px; height: 100px; } }
+@media (max-width: 420px) { .logo { width: 48px; height: 48px; } .menu ul { grid-template-columns: 1fr; } .tarjeta-disfraz { flex-direction: column; } .tarjeta-disfraz img { width: 100%; height: 170px; } }

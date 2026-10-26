@@ -1,64 +1,61 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disfraces</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Disfraces para adultos</title>
     <link rel="stylesheet" href="bonito.css">
 </head>
 <body>
-    
     <header>
-        <h1>Disfraces</h1>
-        <img class="img" src="lacalabaza.webp" alt="Logo Disfraces">
+        <div>
+            <p class="etiqueta">Noche de sustos</p>
+            <h1>Disfraces para adultos</h1>
+            <p class="bajada">Ideas para convertir cualquier fiesta en una historia inolvidable.</p>
+        </div>
+        <img class="logo" src="lacalabaza.webp" alt="Calabaza, logo de Disfraces">
     </header>
-    
+
     <div class="contenedor">
-        
-        
-        <aside class="menu">
+        <aside class="menu" aria-label="Categorías">
             <nav>
-                <h3 style="color: rgb(102, 7, 7);">Menú</h3>
+                <h2>Explora</h2>
                 <ul>
-                    <li class="Metococrearotrohptali">Inicio</li>
-                    <li class="Metococrearotrohptali">Adultos que se disfrazan</li>
-                    <li class="Metococrearotrohptali">Niños normales</li>
-                    <li class="Metococrearotrohptali">Niñas</li>
+                    <li><a class="activo" href="#catalogo" aria-current="page">Adultos</a></li>
+                    <li><a href="#catalogo">Niños</a></li>
+                    <li><a href="#catalogo">Niñas</a></li>
                 </ul>
             </nav>
         </aside>
-    
-        <section class="galeria">
+
+        <main class="galeria" id="catalogo">
             <article class="tarjeta-disfraz">
-                <img class="imgParaNiño" src="niño con un fokin disfraz.webp" alt="Disfraz 1">
+                <img src="niño con un fokin disfraz.webp" alt="Disfraz de aspecto misterioso">
                 <div class="info-disfraz">
-                    <h2>Disfraz 1</h2>
-                    <p>Descripción descriptiva para describir el disfraz uno pero como no tengo tiempo voy a poner esto y vamos a suponer que es una descripción del disfraz 1.</p>
+                    <p class="categoria">Clásico de Halloween</p>
+                    <h2>La criatura de la noche</h2>
+                    <p>Una idea oscura y divertida para quienes quieren entrar a la fiesta con un look inolvidable.</p>
                 </div>
             </article>
-        
             <article class="tarjeta-disfraz">
-                <img class="imgParaNiño" src="DisfrazTodoQuemadoDeMrd.webp" alt="Disfraz 2">
+                <img src="DisfrazTodoQuemadoDeMrd.webp" alt="Disfraz de monstruo quemado">
                 <div class="info-disfraz">
-                    <h2>Disfraz 2</h2>
-                    <p>Descripción descriptiva para describir el disfraz dos pero como no tengo tiempo voy a poner esto y vamos a suponer que es una descripción del disfraz 2.</p>
+                    <p class="categoria">Terror</p>
+                    <h2>Monstruo de película</h2>
+                    <p>Un personaje aterrador para ser el centro de todas las miradas durante la noche.</p>
                 </div>
             </article>
-        
             <article class="tarjeta-disfraz">
-                <img class="imgParaElGordo" src="broCreeQueSeVeBien.jpg" alt="Disfraz 3">
+                <img src="broCreeQueSeVeBien.jpg" alt="Disfraz creativo para una fiesta">
                 <div class="info-disfraz">
-                    <h2>Disfraz 3</h2>
-                    <p>Descripción descriptiva para describir el disfraz tres pero como no tengo tiempo voy a poner esto y vamos a suponer que es una descripción del disfraz 3.</p>
+                    <p class="categoria">Para compartir</p>
+                    <h2>El disfraz inesperado</h2>
+                    <p>Una opción original para armar un look en grupo y disfrutar la celebración con amigos.</p>
                 </div>
             </article>
-        </section>
-        
+        </main>
     </div>
-    
-    <footer>
-        <p>Jefe David Santiago Marín Gamboa</p>  <p>Mult. Villacafé   -   Ibagué, Tolima 2026</p>
-    </footer>
-    
+
+    <footer><p>Disfraces · Ibagué, Tolima · 2026</p></footer>
 </body>
 </html>
